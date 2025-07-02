@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - dev
+      - main
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: [backend]
     environment: dev
 
     steps:
